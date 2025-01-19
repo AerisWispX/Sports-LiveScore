@@ -1,0 +1,341 @@
+        :root {
+            --primary-color: #9b87f5;
+            --secondary-color: #718096;
+            --background-color: #0a0c10;
+            --card-background: #1a1e24;
+            --text-color: #e2e8f0;
+            --secondary-text-color: #a0aec0;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-weight: 600;
+            text-align: left;
+            font-size: 24px;
+            margin-bottom: 16px;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .date-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .date-nav button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .date-nav button:hover {
+            background-color: #2f855a;
+        }
+
+        .date-display {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .match-card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            margin-bottom: 12px;
+            padding: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .match-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        .match-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .league-name {
+            font-size: 12px;
+            color: var(--secondary-text-color);
+            font-weight: 400;
+        }
+
+        .match-time {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--primary-color);
+        }
+
+        .match-teams {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .team {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .team-logo {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .team-name {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0 8px;
+        }
+
+        .score-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 60px;
+        }
+
+        .score {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team-score {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .score-divider {
+            margin: 0 4px;
+        }
+
+        .match-status {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .finished {
+            color: var(--secondary-color);
+        }
+
+        .upcoming {
+            color: var(--primary-color);
+        }
+
+        .error-message {
+            background-color: rgba(231, 76, 60, 0.1);
+            border: 1px solid #e74c3c;
+            border-radius: 4px;
+            padding: 8px;
+            margin-bottom: 12px;
+            color: #e74c3c;
+            font-size: 12px;
+        }
+
+        .home-team {
+            text-align: right;
+            justify-content: flex-end;
+        }
+
+        .away-team {
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 12px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .match-card {
+                padding: 10px;
+            }
+        }
+        .match-date-time {
+            font-size: 12px;
+            color: var(--secondary-text-color);
+            margin-bottom: 4px;
+        }
+
+                .match-date-time {
+            font-size: 12px;
+            color: var(--secondary-text-color);
+            margin-bottom: 4px;
+        }
+
+        .vs {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .match-status {
+            font-size: 10px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .finished {
+            color: var(--secondary-color);
+        }
+
+        .upcoming {
+            color: var(--primary-color);
+        }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .pagination button:hover {
+            background-color: #2f855a;
+        }
+
+        .pagination button:disabled {
+            background-color: var(--secondary-color);
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .pagination-info {
+            font-size: 14px;
+            color: var(--text-color);
+        }
+          h2 {
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 12px 16px;
+            background-color: var(--primary-color);
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 25%;
+            background-color: var(--card-background);
+            transform: skew(-15deg);
+            transform-origin: top right;
+        }
+
+        h2 span {
+            position: relative;
+            z-index: 1;
+        }
+
+        #matches-container {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        #matches-list {
+            padding: 12px;
+        }
+
+        .match-card {
+            margin-bottom: 8px;
+        }
+
+        .match-card:last-child {
+            margin-bottom: 10px;
+        }
+
+        .no-matches {
+            margin: 8px 0;
+        }
+
+        .schedule-header {
+            margin-bottom: 24px;
+        }
+
+        .date-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .date-nav button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .date-nav button:hover {
+            background-color: #2f855a;
+        }
+
+        .date-display {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
